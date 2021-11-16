@@ -1,4 +1,4 @@
-# Calculator Project Setup
+ Calculator Project Setup
 [![Build Status]([![Build Status](https://app.travis-ci.com/sravyamyla/calc2.svg?branch=main)](https://app.travis-ci.com/sravyamyla/calc2))
 
 Run Pip Install
