@@ -6,5 +6,5 @@ from calc.calculation import Calculation
 class Addition(Calculation):
     """The addition class"""
     def getresult(self):
-        #you need to use self to reference the data contained in the instance of the object.
+        """class"""
         return self.value_a + self.value_b
