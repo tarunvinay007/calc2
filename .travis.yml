@@ -10,4 +10,4 @@ script:
 branches:
   only:
     - main
-    - part3
+    - part4_5alternative
