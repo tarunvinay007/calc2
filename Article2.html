@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+
+<html>
+<head>
+    <link a href="" rel="stylesheet">
+</head>
+
+<body>
+<!-- header start -->
+<div id="header" class="section">
+    <p> INTERNET-HISTORY </p>
+</div>
+
+<div class="section">
+    <p><span>AAA</span></p>
+
+    <p>
+        AAA stands for Arrange, Act, Assert. AAA is a way to structure unit tests so they are easier to read, maintain
+        and enhance. AAA pattern is a pattern for structuring tests. It breaks each test down into three parts Arrange,
+        Act and Assert. Where each part is a step leading to the next. Arrange step sets up the test's input value, the
+        Act step prompts the primary function being tested, and the Assert step verifies that the output of the
+        function is what we expected.
+
+    </p>
+
+</div>
+
+
+<div class="section">
+    <p><span>Arrange Act Assert</span></p>
+    <p>
+        The Arrange-Act-Assert(also AAA and 3A) pattern of testing was observed and named by Bill Wake in 2001.
+        I first came across it in Kent Becks book Test Driven Development By Example and I spoke about it at PyConUK
+        2016.
+        The pattern focuses each test on a single action. The advantage of this focus is that it clearly separates the
+        arrangement of the System Under Test (SUT) and the assertions that are made on it after the action.
+        On multiple projects I ve worked on I’ve experienced organised and clean code in the main codebase but
+        disorganisation and inconsistency in the test suite. However when AAA is applied, I’ve found it helps by
+        unifying and clarifying the structure of tests which helps make the test suite much more understandable and
+        manageable.
+
+    </p>
+</div>
+
+
+
+<div class="section">
+    <p><span>Arrange</span></p>
+    <p>
+        Arrange step sets up the test's input value. The block of code that sets the condition for the test action.
+    </p>
+</div>
+
+<div class="section">
+        Arrangement block is just one line to build a list.
+
+</div>
+
+<div class="section">
+    <p><span>Rules and Regulations</span></p>
+    <p>
+        Use only a single block of code without empty lines. Should not use assert in the Arrange block. If you need to
+        make assertion about our arrangement, then this is a smell that your arrangement is too complicated and should
+        be extracted to a fixture or setup function and tested in its own right. Only prepare non-deterministic results
+        not available after action. The arrange section will not require comments. If you have a large arrangement in
+        your tests which is complex enough to require detailed comments then consider Extracting the comments into a
+        multi-line docstring. Extracting the arrangement code into the fixture and testing that fixture is establishing
+        the expected conditions as previously mentioned regulation.
+    </p>
+</div>
+
+<div class="section">
+    <p><span>Act</span></p>
+    <p>
+        Line of code where the action is taken on the SUT. This Act step prompts the primary function being tested
+    </p>
+</div>
+
+<div class="section">
+</div>
+
+<div class="section">
+    <p><span>Rules</span></p>
+    <p>
+        This makes it easier to distinguish test actions and you can avoid the hardest job in programming i.e., naming.
+        When every result is called result, then you do not need to waste brain power wondering if it should be
+        item = or response = etc. An added benefit is that you can find test actions easily with a tool like grep.
+        Even when there is no result from the action, capture it with result = and then assert result is None. In this
+        way, the SUTs behaviour is pinned.
+        If you struggle to write a single line action, then consider extracting some of that code into your arrangement.
+        The action can be wrapped in with raises for expected exceptions. In your action will be two lines surrounded
+        by empty lines.
+    </p>
+</div>
+
+<div class="section">
+    <p><span>Assert </span></p>
+    <p>
+        The block of code which performs the assertions on the state of SUT after action. Assert step verifies that the
+        output of the function is what we expected.
+
+    </p>
+</div>
+
+<div class="section">
+
+</div>
+
+<div class="section">
+    <h1><span>Rules</span></h1>
+    <p>
+        Use a single block of code with no empty lines. First test that results, then test side effects.
+        Limit the actions that you make in this block. No actions should happen which is not always possible.
+        Use simple blocks of assertions. If you find that you are repeatedly writing the same code to extract
+        information from the SUT and perform assertions on it, then consider extracting an assertion helper.
+    </p>
+</div>
+
+{% endblock %}
