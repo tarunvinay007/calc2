@@ -1,13 +1,3 @@
-# Calculator Project Setup
-[![Build Status]([![Build Status](https://app.travis-ci.com/tarunvinay007/calc2.svg?branch=main)](https://app.travis-ci.com/tarunvinay007/calc2))
+#flash validation with calculation program
 
-Run Pip Install
-pip install -r requirements.txt
-
-To run tests, Lint, and Coverage report use this command:
-
-pytest  --pylint --cov
-
-.pylintrc is the config for pylint
-.coveragerc is the config for coverage
-setup.py is a config file for pytest
+<img width="1440" alt="Screen Shot 2021-12-20 at 3 29 15 AM" src="https://user-images.githubusercontent.com/90420604/146788732-0646b8a7-a447-4b64-a3b1-4129f41de1ad.png">
